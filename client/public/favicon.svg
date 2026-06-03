@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Dark rounded background -->
+  <rect width="32" height="32" rx="7" fill="#0F0F14"/>
+
+  <!-- H mark — left bar -->
+  <rect x="7" y="7" width="4" height="18" rx="1.5" fill="#A8FF00"/>
+  <!-- H mark — right bar -->
+  <rect x="21" y="7" width="4" height="18" rx="1.5" fill="#A8FF00"/>
+  <!-- H mark — crossbar -->
+  <rect x="7" y="14" width="18" height="4" rx="1.5" fill="#A8FF00"/>
+
+  <!-- Accent dot (matches the wordmark dot in the header) -->
+  <circle cx="26" cy="8" r="2.5" fill="#A8FF00"/>
+</svg>

@@ -1,0 +1,29 @@
+{
+  "name": "habityn-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb-memory-server": "^11.2.0",
+    "mongoose": "^8.8.3",
+    "node-cron": "^3.0.3",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.1",
+    "@types/node-cron": "^3.0.11",
+    "@types/web-push": "^3.6.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

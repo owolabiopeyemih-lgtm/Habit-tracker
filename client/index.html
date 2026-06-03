@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Favicon — SVG for modern browsers, PNG fallback for older ones -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#0F0F14" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habityn — Build Better Habits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Habityn — Build Better Habits" />
+    <meta property="og:description" content="Track your daily routines with clarity and momentum. Build streaks, analyse progress, stay consistent." />
+    <meta property="og:image"       content="/og-image.svg" />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt"   content="Habityn — Build Better Habits" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="Habityn — Build Better Habits" />
+    <meta name="twitter:description" content="Track your daily routines with clarity and momentum." />
+    <meta name="twitter:image"       content="/og-image.svg" />
+
+    <!-- General SEO -->
+    <meta name="description" content="Track your daily routines with clarity and momentum. Build streaks, analyse progress, stay consistent." />
+  </head>
+  <body>
+    <!-- Prevent flash of wrong theme before React hydrates -->
+    <script>
+      ;(function () {
+        var saved = localStorage.getItem('habityn-theme')
+        var preferred = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+        document.documentElement.setAttribute('data-theme', saved || preferred)
+      })()
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

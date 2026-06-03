@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Habityn — Build Better Habits">
+  <defs>
+    <!-- Dot-grid texture -->
+    <pattern id="grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.055)"/>
+    </pattern>
+    <!-- Right-side neon glow -->
+    <radialGradient id="glow" cx="78%" cy="48%" r="42%">
+      <stop offset="0%"   stop-color="#A8FF00" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#A8FF00" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Left-edge vignette keeps text crisp -->
+    <linearGradient id="vignette" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#0F0F14" stop-opacity="0.4"/>
+      <stop offset="55%" stop-color="#0F0F14" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Ring progress drop-shadow -->
+    <filter id="ring-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <!-- Soft card shadow -->
+    <filter id="card-shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- ── Base layers ─────────────────────────── -->
+  <rect width="1200" height="630" fill="#0F0F14"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#vignette)"/>
+
+  <!-- Subtle vertical divider between cols -->
+  <rect x="682" y="60" width="1" height="510" fill="rgba(255,255,255,0.05)"/>
+
+
+  <!-- ══════════════════════════════════════════
+       LEFT COLUMN  — brand + copy
+  ══════════════════════════════════════════ -->
+
+  <!-- Logo mark (matches header H badge) -->
+  <rect x="72" y="72" width="54" height="54" rx="13" fill="#1C1C22"/>
+  <rect x="86"  y="86"  width="8" height="26" rx="2" fill="#A8FF00"/>
+  <rect x="104" y="86"  width="8" height="26" rx="2" fill="#A8FF00"/>
+  <rect x="86"  y="97"  width="26" height="5" rx="2" fill="#A8FF00"/>
+  <circle cx="134" cy="78" r="5" fill="#A8FF00"/>
+
+  <!-- App name -->
+  <text x="141" y="107" font-family="Georgia,serif" font-size="26" font-weight="700"
+        fill="rgba(240,240,238,0.9)" letter-spacing="-0.5">Habityn</text>
+
+  <!-- Headline -->
+  <text x="72" y="270" font-family="Georgia,serif" font-size="96" font-weight="900"
+        fill="#F0F0EE" letter-spacing="-4">Build Better</text>
+  <text x="72" y="378" font-family="Georgia,serif" font-size="96" font-weight="900"
+        fill="#A8FF00" letter-spacing="-4">Habits.</text>
+
+  <!-- Tagline -->
+  <text x="76" y="436" font-family="system-ui,sans-serif" font-size="22"
+        fill="rgba(240,240,238,0.45)" letter-spacing="-0.3">
+    Track your daily routines with clarity and momentum
+  </text>
+
+  <!-- ── Habit mockup pills ──────────────────── -->
+
+  <!-- Pill 1 — Drink water (completed) -->
+  <rect x="72" y="490" width="185" height="44" rx="22" fill="#1C1C22" filter="url(#card-shadow)"/>
+  <text x="94"  y="519" font-size="18">💧</text>
+  <text x="118" y="519" font-family="system-ui,sans-serif" font-size="13" font-weight="600"
+        fill="rgba(240,240,238,0.65)">Drink water</text>
+  <!-- Green check dot -->
+  <circle cx="242" cy="512" r="10" fill="#A8FF00"/>
+  <path d="M237 512 l3.5 3.5 l6-6" stroke="#0F0F14" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Pill 2 — Read 20 pages -->
+  <rect x="270" y="490" width="185" height="44" rx="22" fill="#1C1C22" filter="url(#card-shadow)"/>
+  <text x="292" y="519" font-size="18">📚</text>
+  <text x="316" y="519" font-family="system-ui,sans-serif" font-size="13" font-weight="600"
+        fill="rgba(240,240,238,0.65)">Read 20 pages</text>
+
+  <!-- Pill 3 — Morning run (active / neon) -->
+  <rect x="468" y="490" width="185" height="44" rx="22" fill="#A8FF0012"
+        stroke="#A8FF00" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="490" y="519" font-size="18">🏃</text>
+  <text x="514" y="519" font-family="system-ui,sans-serif" font-size="13" font-weight="700"
+        fill="#A8FF00">Morning run</text>
+
+
+  <!-- ══════════════════════════════════════════
+       RIGHT COLUMN — progress ring + stats
+  ══════════════════════════════════════════ -->
+
+  <!-- Outer ring track -->
+  <circle cx="950" cy="300" r="185"
+          fill="none" stroke="rgba(240,240,238,0.07)" stroke-width="14"/>
+
+  <!-- Progress arc  — 72% (circumference ≈ 1163, 72% ≈ 837) -->
+  <circle cx="950" cy="300" r="185"
+          fill="none" stroke="#A8FF00" stroke-width="14"
+          stroke-linecap="round"
+          stroke-dasharray="837 326"
+          transform="rotate(-90 950 300)"
+          filter="url(#ring-glow)"
+          opacity="0.95"/>
+
+  <!-- Ring center text -->
+  <text x="950" y="288" font-family="Georgia,serif" font-size="72" font-weight="900"
+        fill="#F0F0EE" text-anchor="middle" letter-spacing="-2">72%</text>
+  <text x="950" y="320" font-family="system-ui,sans-serif" font-size="17"
+        fill="rgba(240,240,238,0.45)" text-anchor="middle" letter-spacing="1">TODAY'S GOAL</text>
+
+  <!-- Streak badge at top of ring -->
+  <rect x="894" y="88" width="112" height="36" rx="18" fill="#1C1C22"/>
+  <text x="950" y="112" font-family="system-ui,sans-serif" font-size="14" font-weight="700"
+        fill="#F5A623" text-anchor="middle">🔥 14 day streak</text>
+
+  <!-- Stats card below ring -->
+  <rect x="796" y="510" width="308" height="64" rx="18" fill="#1C1C22" filter="url(#card-shadow)"/>
+
+  <!-- Stat: Habits -->
+  <text x="862" y="538" font-family="Georgia,serif" font-size="24" font-weight="900"
+        fill="#F0F0EE" text-anchor="middle">8</text>
+  <text x="862" y="558" font-family="system-ui,sans-serif" font-size="10" font-weight="700"
+        fill="rgba(240,240,238,0.35)" text-anchor="middle" letter-spacing="1">HABITS</text>
+
+  <rect x="915" y="520" width="1" height="36" fill="rgba(255,255,255,0.08)"/>
+
+  <!-- Stat: Completion -->
+  <text x="950" y="538" font-family="Georgia,serif" font-size="24" font-weight="900"
+        fill="#A8FF00" text-anchor="middle">5/7</text>
+  <text x="950" y="558" font-family="system-ui,sans-serif" font-size="10" font-weight="700"
+        fill="rgba(240,240,238,0.35)" text-anchor="middle" letter-spacing="1">THIS WEEK</text>
+
+  <rect x="985" y="520" width="1" height="36" fill="rgba(255,255,255,0.08)"/>
+
+  <!-- Stat: Best streak -->
+  <text x="1038" y="538" font-family="Georgia,serif" font-size="24" font-weight="900"
+        fill="#F0F0EE" text-anchor="middle">21d</text>
+  <text x="1038" y="558" font-family="system-ui,sans-serif" font-size="10" font-weight="700"
+        fill="rgba(240,240,238,0.35)" text-anchor="middle" letter-spacing="1">BEST</text>
+
+</svg>

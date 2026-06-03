@@ -1,0 +1,12 @@
+{
+  "name": "Habityn",
+  "short_name": "Habityn",
+  "description": "Build and maintain better habits",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F0F14",
+  "theme_color": "#A8FF00",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any", "purpose": "any maskable" }
+  ]
+}
