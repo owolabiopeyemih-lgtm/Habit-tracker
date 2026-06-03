@@ -1,7 +1,7 @@
 {
   "version": 2,
   "installCommand": "npm install",
-  "buildCommand": "npm run build --workspace=client",
+  "buildCommand": "node scripts/generate-og.mjs && npm run build --workspace=client",
   "outputDirectory": "client/dist",
   "functions": {
     "api/index.ts": {
