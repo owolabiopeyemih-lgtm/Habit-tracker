@@ -6,6 +6,8 @@ A mobile-first habit tracking web application with a polished dark/light theme, 
 
 ![Habityn OG](client/public/og-image.svg)
 
+📄 [Read the case study](case-study/index.html) — problem framing, design system, and mockups
+
 ---
 
 ## Table of Contents

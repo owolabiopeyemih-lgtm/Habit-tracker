@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 780" width="375" height="780" role="img" aria-label="Habityn habit creation form mockup">
+  <defs>
+    <pattern id="dotgrid3" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.05)"/>
+    </pattern>
+    <filter id="cardShadow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="375" height="780" rx="36" fill="#08080E"/>
+  <rect x="6" y="6" width="363" height="768" rx="30" fill="#111116"/>
+  <rect x="6" y="6" width="363" height="768" rx="30" fill="url(#dotgrid3)"/>
+  <rect x="140" y="14" width="95" height="22" rx="11" fill="#08080E"/>
+
+  <!-- Header / step indicator -->
+  <text x="30" y="72" font-family="system-ui,sans-serif" font-size="13" fill="rgba(240,240,238,0.4)">✕ Cancel</text>
+  <text x="187" y="72" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#F0F0EE" text-anchor="middle">New habit</text>
+  <text x="345" y="72" font-family="system-ui,sans-serif" font-size="13" fill="rgba(240,240,238,0.4)" text-anchor="end">2 / 3</text>
+
+  <!-- step dots -->
+  <rect x="30" y="92" width="100" height="4" rx="2" fill="#A8FF00"/>
+  <rect x="138" y="92" width="100" height="4" rx="2" fill="#A8FF00"/>
+  <rect x="246" y="92" width="99" height="4" rx="2" fill="rgba(240,240,238,0.12)"/>
+
+  <text x="30" y="138" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#F0F0EE">Pick an icon &amp; colour</text>
+  <text x="30" y="160" font-family="system-ui,sans-serif" font-size="13" fill="rgba(240,240,238,0.45)">Make it easy to spot on your dashboard</text>
+
+  <!-- Habit name preview pill -->
+  <rect x="30" y="182" width="315" height="56" rx="18" fill="#15170A" stroke="#A8FF00" stroke-width="1.5" stroke-opacity="0.4"/>
+  <rect x="44" y="194" width="32" height="32" rx="10" fill="#13230A"/>
+  <text x="60" y="216" font-size="16" text-anchor="middle">🏃</text>
+  <text x="88" y="216" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#F0F0EE">Morning run</text>
+
+  <!-- Icon grid -->
+  <text x="30" y="262" font-family="system-ui,sans-serif" font-size="12" font-weight="700" letter-spacing="0.5" fill="rgba(240,240,238,0.45)">ICON</text>
+  <g font-size="18" text-anchor="middle">
+    <rect x="30"  y="274" width="46" height="46" rx="14" fill="#1C1C22"/><text x="53"  y="302">💪</text>
+    <rect x="84"  y="274" width="46" height="46" rx="14" fill="#A8FF00"/><text x="107" y="302">🏃</text>
+    <rect x="138" y="274" width="46" height="46" rx="14" fill="#1C1C22"/><text x="161" y="302">📚</text>
+    <rect x="192" y="274" width="46" height="46" rx="14" fill="#1C1C22"/><text x="215" y="302">🧘</text>
+    <rect x="246" y="274" width="46" height="46" rx="14" fill="#1C1C22"/><text x="269" y="302">💧</text>
+    <rect x="300" y="274" width="45" height="46" rx="14" fill="#1C1C22"/><text x="322" y="302">🥗</text>
+  </g>
+
+  <!-- Colour swatches -->
+  <text x="30" y="350" font-family="system-ui,sans-serif" font-size="12" font-weight="700" letter-spacing="0.5" fill="rgba(240,240,238,0.45)">COLOUR</text>
+  <g>
+    <circle cx="46"  cy="378" r="16" fill="#6366f1"/>
+    <circle cx="86"  cy="378" r="16" fill="#ec4899"/>
+    <circle cx="126" cy="378" r="17" fill="#f97316" stroke="#F0F0EE" stroke-width="2.5"/>
+    <circle cx="166" cy="378" r="16" fill="#ef4444"/>
+    <circle cx="206" cy="378" r="16" fill="#84cc16"/>
+    <circle cx="246" cy="378" r="16" fill="#22c55e"/>
+    <circle cx="286" cy="378" r="16" fill="#06b6d4"/>
+    <circle cx="326" cy="378" r="16" fill="#a855f7"/>
+  </g>
+
+  <!-- Frequency -->
+  <text x="30" y="430" font-family="system-ui,sans-serif" font-size="12" font-weight="700" letter-spacing="0.5" fill="rgba(240,240,238,0.45)">FREQUENCY</text>
+  <rect x="30" y="442" width="73" height="38" rx="19" fill="#1C1C22"/>
+  <text x="66" y="466" font-family="system-ui,sans-serif" font-size="12" fill="rgba(240,240,238,0.6)" text-anchor="middle">Daily</text>
+  <rect x="110" y="442" width="100" height="38" rx="19" fill="#A8FF00"/>
+  <text x="160" y="466" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#0F0F14" text-anchor="middle">Weekdays</text>
+  <rect x="217" y="442" width="100" height="38" rx="19" fill="#1C1C22"/>
+  <text x="267" y="466" font-family="system-ui,sans-serif" font-size="12" fill="rgba(240,240,238,0.6)" text-anchor="middle">Custom</text>
+
+  <!-- Reminder -->
+  <text x="30" y="528" font-family="system-ui,sans-serif" font-size="12" font-weight="700" letter-spacing="0.5" fill="rgba(240,240,238,0.45)">REMINDER</text>
+  <rect x="30" y="540" width="315" height="58" rx="16" fill="#1C1C22"/>
+  <text x="50" y="574" font-size="16">⏰</text>
+  <text x="78" y="574" font-family="system-ui,sans-serif" font-size="14" fill="#F0F0EE">6:30 AM</text>
+  <rect x="296" y="556" width="38" height="22" rx="11" fill="#A8FF00"/>
+  <circle cx="324" cy="567" r="9" fill="#0F0F14"/>
+
+  <!-- CTA -->
+  <rect x="30" y="700" width="315" height="56" rx="28" fill="#A8FF00" filter="url(#cardShadow3)"/>
+  <text x="187" y="734" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#0F0F14" text-anchor="middle">Continue</text>
+</svg>
